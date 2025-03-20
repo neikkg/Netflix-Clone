@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+  background-color: #000000ef;
+  font-family: Arial, sans-serif;
+}
+
+.backgroundCountainer {
+  background-image: url("banner-image.jpg");
+  filter: blur(15px);
+  height: 210vh;
+  position: relative;
+}
+
+.contentContainer {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.5rem 2.5rem;
+}
+
+.pinkOverlay {
+  background-color: rgba(0, 0, 0, 0.815);
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  /* border: 2px solid green; */
+  height: 11vh;
+}
+
+.navbarSection {
+  /* border: 2px solid green; */
+  display: flex;
+  height: 50%;
+}
+
+.navbarLeftSection {
+  /* border: 2px solid red; */
+  width: 50%;
+}
+
+.netflixLogo {
+  width: 30%;
+  margin-left: -.5rem;
+}
+
+.navbarRightSection {
+  /* border: 2px solid green; */
+  width: 50%;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.navbarButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 2px solid green; */
+  height: 100%;
+}
+
+.languageButton {
+  display: flex;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+.languageButton p {
+  margin-left: 5px;
+}
+
+.signInButton {
+  background-color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+}
+
+.bannerSection {
+  /* border: 2px solid red; */
+  height: 90vh;
+  width: 100%;
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0 , 0, .7), rgba(0, 0 , 0, .7), rgba(0, 0 , 0, .7), rgba(0, 0 , 0, .7));
+  border-radius: 20px;
+}
+
+.bannerContainer {
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerContainer h2 {
+  font-size: 4rem;
+  /* border: 2px solid green; */
+  width: 60%;
+  text-align: center;
+  font-weight: 100px;
+  margin-bottom: 1rem;
+}
+
+.bannerContainer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  /* font-weight: 100px; */
+}
+
+.bannerContainer p,
+.getStartedSection {
+    font-size: 1em;
+  margin: 10px;
+  /* font-weight: 100px; */
+}
+
+.inputContainer {
+  /* border: 2px solid green; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.emailInputBox {
+  padding: 1.7rem;
+  border-radius: 3rem;
+  border: 1px solid rgb(138, 137, 137);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60%;
+  height: 0%;
+  color: white;
+  font-size: 1rem;
+}
+
+.emailInputBox::placeholder {
+  color: white;
+}
+
+.getStartedButton {
+  width: 35%;
+  height: 70%;
+  background-color: rgba(255, 0, 0, 0.815);
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.inputContainer button:hover {
+  background-color: #f6121dbb;
+}
+
+.carouselSection,
+.planSection,
+.reasonToJoinSection {
+  /* border: 2px solid red; */
+  color: white;
+}
+
+.carouselSection h2 {
+  /* border: 2px solid red; */
+  margin-top: 1rem;
+  margin-left: 7.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.carouselCardContainer {
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+
+.carouselCard {
+  width: 12%;
+  /* border: 2px solid yellow; */
+  height: 40vh;
+  border-radius: 20px;
+  position: relative;
+}
+
+.carouselCard a:hover img{
+    border: 3px solid white;
+}
+
+.carouselNumberContainer {
+  position: absolute;
+  left: -18px;
+}
+
+.carouselNumberContainer span {
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+  font-size: 4rem;
+}
+
+.carouselImageContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.carouselImageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.plansContainer {
+  height: 100%;
+  width: 86%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+}
+
+.planCard {
+  border: 2px solid rgb(255, 255, 255, 0.1);
+  height: 43vh;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem 1rem;
+  border-radius: 20px;
+}
+
+.planHeading{
+    margin-top: 2.5rem;
+    margin-left: 6.5rem;
+    font-size: 1.4em;
+    font-weight: 700;
+  
+}
+
+.planCard h2 {
+  margin-left: 0;
+  font-size: 1.5rem;
+  filter: opacity(.9);
+}
+
+.planCard h4 {
+  font-size: 1.2rem;
+  filter: opacity(.7);
+}
+
+.planCard p {
+  font-size: .8em;
+  filter: opacity(.7);
+}
+
+.planCard1 {
+  background: linear-gradient(
+    149deg,
+    #1c4072 6.96%,
+    #172b47 40.17%,
+    #120c1f 73.39%
+  );
+}
+
+.planCard2 {
+  background: linear-gradient(
+    149deg,
+    #1c4072 6.96%,
+    #172b47 40.17%,
+    #120c1f 73.39%
+  );
+}
+
+.planCard3 {
+  background: linear-gradient(
+    149deg,
+    #59216e 6.96%,
+    #251743 40.17%,
+    #120c1f 73.39%
+  );
+}
+
+.planCard4 {
+  background: linear-gradient(
+    149deg,
+    #6c1e41 6.96%,
+    #251743 40.17%,
+    #120c1f 73.39%
+  );
+}
+
+.planCard1 p,
+.planCard2 p,
+.planCard3 p,
+.planCard4 p {
+  padding: 0.7rem 0.1rem 0.1rem 0.1rem;
+}
+
+.planCard1 h4,
+.planCard2 h4,
+.planCard3 h4,
+.planCard4 h4 {
+  margin-top: 0.5rem;
+}
+
+.reasonsContainer {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+}
+
+.reasonCard {
+  background-color: rgba(119, 115, 115, 0.267);
+  border: 2px solid rgb(255, 255, 255, 0.1);
+  height: 35vh;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 20px;
+}
+
+.reasonHeading{
+    margin-top: 2.5rem;
+    margin-left: 6.5rem;
+    font-size: 1.3em;
+    font-weight: 900;
+    filter: opacity(.9);
+}
+
+.reasonCardUpperContent span {
+  font-size: 1.1em;
+  font-weight: 600;
+  filter: opacity(.8);
+}
+
+.reasonCardUpperContent p {
+  margin-top: 1rem;
+  font-size: 1.1em;
+  filter: opacity(0.6);
+}
+
+.reasonCardLowerContent {
+  display: flex;
+  justify-content: end;
+}
+
+.faqSection{
+  width: 86%;
+  margin: 1.5rem auto;
+  padding: 1.3rem;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.faqSection h1{
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #303030;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #404040;
+}
+
+.faq-question span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.getStartedSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getStartedSection p {
+    font-size: .9em;
+  margin-bottom: 1.2rem;
+}
+
+.getStartedSection button {
+  padding: 1rem;
+  width: 37%;
+  height: 9vh;
+  background-color: rgba(255, 0, 0, 0.815);
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.getStartedSection input {
+  padding: 1.1rem;
+  border-radius: 3rem;
+  border: 1px solid rgb(138, 137, 137);
+  outline: none;
+  background-color: #444444;
+  color: #ffffff;
+  width: 55%;
+  height: 0%;
+  font-size: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem auto;
+}
+
+.footerGrid{
+    margin-top: 3rem;
+    display: flex;
+    gap: 12rem;
+}
+
+.footerGrid div{
+    display: grid;
+    gap: 1rem;
+}
+
+.footerGrid a{
+    color: #fff;
+    filter: opacity(.7);
+    font-size: .9em;
+}
+
+.languageButtons{
+    margin: 4rem 0rem 2rem 0rem;
+}
+
+.footerSection{
+    filter: opacity(.7);
+}
+
+.footerSection a{
+    color: #fff;
+}
+
+.footerSection h5{
+    padding: 1rem 0rem 1rem 0rem;
+    filter: opacity(.7);
+}
